@@ -1,0 +1,109 @@
+body{ 
+background-color: lightyellow;
+background-image:url("../images/shrug.png") }
+
+h1{
+	font-family: 'Kodchasan', sans-serif;
+	color:black;
+	background-color: lightyellow;}
+
+h2{font-family: 'Kodchasan', sans-serif;
+	color:black;
+	background-color: lightyellow;}
+
+p{font-family: 'Kodchasan', sans-serif;
+	color:black;
+	background-color: lightyellow;}
+
+
+
+
+/*--Flexbox*/
+
+.flex-container {
+	font-family: 'Kodchasan', sans-serif;
+	color: black;
+	display: flex;
+	background-color: lightyellow;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+/*only for divs inside flex container*/ 
+
+/*HEADER*/
+ div{
+	background-color: lightyellow;
+	margin:10px;
+	padding:10px;
+	font-size:20px;
+	//width: 150px;
+	text-align:center;
+}
+
+div-class="flex-container"{
+	background-color: lightyellow;
+	margin:10px;
+	padding:10px;
+	font-size:20px;
+	//width: 150px;
+	text-align:center;}
+
+/*Animation*/
+
+@keyframes color-change{
+	0%{background-color: lightyellow;}
+	25%{background-color: white;}
+	50% {background-color: white;}
+	75% {background-color: lightyellow;}
+}
+
+
+
+@keyframes color-move{
+	0% {background-color: lightyellow;left:0px; top:0px;}
+	25%{background-color: lightpink;left:200px;top:0px;}
+	50% {background-color: lightyellow;left: 200px;top:200px;}
+	75% {background-color: white;left:0px;top:200px;}
+	100% {background-color: lightyellow;left:0px;top:0px;}
+}
+
+
+#test {
+	width:2px;
+	height:2px;
+	background-color:red;
+	position: relative;
+
+
+
+
+
+animation-name: color-change;
+animation-duration:4s;
+animation-iteration-count:infinite;
+}
+
+
+/*Transition*/
+
+div{
+	width:200px;
+	height:200px;
+
+	background:lightyellow;
+	margin:100px;
+	transition: all 3s; 
+}
+
+div:hover {
+	background:lightyellow;
+
+	transform:scale(2);
+
+	border-radius: 50%;
+
+	background:url('shrug.png')center top;
+}
+
